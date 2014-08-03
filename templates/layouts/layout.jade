@@ -1,0 +1,38 @@
+doctype html
+
+html
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+
+    title Mike Zhang
+
+    block pagecss
+
+    // bower:css
+    link(rel='stylesheet', href='../build/public/bootstrap/dist/css/bootstrap.css')
+    // endbower
+
+  body
+    .container    
+      .header
+        ul.nav.nav-pill.pull-right
+          li
+            a(href="#") Home
+          li
+            a(href="#") Resume
+          li
+            a(href="#") Blog
+        h3.text-muted Mike Zhang
+
+      block content
+
+
+    // bower:js
+    script(src='../build/public/jquery/dist/jquery.js')
+    script(src='../build/public/bootstrap/dist/js/bootstrap.js')
+    // endbower
+    
+    block pagejs
+

@@ -1,0 +1,12 @@
+{
+  "name": "maikulzhang",
+  "version": "0.0.0",
+  "description": "Personal webpage",
+  "main": "index.js",
+  "author": "Mike Zhang",
+  "devDependencies": {
+    "gulp": "~3.8.7",
+    "wiredep": "~1.8.2",
+    "gulp-jade": "~0.7.0"
+  }
+}
