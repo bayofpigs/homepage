@@ -11,30 +11,30 @@ html
     block pagecss
 
     // bower:css
+    link(rel='stylesheet', href='public/bower_components/normalize-css/normalize.css')
     link(rel='stylesheet', href='public/bower_components/bootstrap/dist/css/bootstrap.css')
     // endbower
     link(rel='stylesheet', href='public/css/main.css')
+    link(href='http://fonts.googleapis.com/css?family=Lato:400,400italic,700italic', rel='stylesheet', type='text/css')
 
   body
-    .container    
-      .header
-        ul.nav.nav-pills.pull-right
-          li
-            a(href="#") Home
-          li
-            a(href="#") Resume
-          li
-            a(href="#") Blog
-        div.logo
-          h1#name Mike Zhang
-          h3#title Programmer
+    .navigation
+      .container.main    
+        .header
+          ul.nav.nav-pills.pull-right
+            li
+              a(href="#") Home
+            li
+              a(href="#") Resume
+            li
+              a(href="#") Blog
+          div.logo
+            h1#name Mike Zhang
+            h3#title Programmer
 
+    .content
       .container.page-content
         block content
-
-      .footer
-        p For serious business (srs bsns), I do prefer contact by 
-          a(href="mailto:mz3@princeton.edu") email 
 
     // bower:js
     script(src='public/bower_components/jquery/dist/jquery.js')
