@@ -11,27 +11,34 @@ html
     block pagecss
 
     // bower:css
-    link(rel='stylesheet', href='../build/public/bootstrap/dist/css/bootstrap.css')
+    link(rel='stylesheet', href='public/bower_components/bootstrap/dist/css/bootstrap.css')
     // endbower
+    link(rel='stylesheet', href='public/css/main.css')
 
   body
     .container    
       .header
-        ul.nav.nav-pill.pull-right
+        ul.nav.nav-pills.pull-right
           li
             a(href="#") Home
           li
             a(href="#") Resume
           li
             a(href="#") Blog
-        h3.text-muted Mike Zhang
+        div.logo
+          h1#name Mike Zhang
+          h3#title Programmer
 
-      block content
+      .container.page-content
+        block content
 
+      .footer
+        p For serious business (srs bsns), I do prefer contact by 
+          a(href="mailto:mz3@princeton.edu") email 
 
     // bower:js
-    script(src='../build/public/jquery/dist/jquery.js')
-    script(src='../build/public/bootstrap/dist/js/bootstrap.js')
+    script(src='public/bower_components/jquery/dist/jquery.js')
+    script(src='public/bower_components/bootstrap/dist/js/bootstrap.js')
     // endbower
     
     block pagejs
